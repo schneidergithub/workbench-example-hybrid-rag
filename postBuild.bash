@@ -23,6 +23,12 @@ sudo -E /opt/conda/bin/pip install anyio==4.3.0 pymilvus==2.3.1 transformers==4.
 
 sudo -E mkdir -p /mnt/milvus
 sudo -E mkdir -p /data
+
+if ! id -u workbench &>/dev/null; then
+    sudo groupadd -r workbench
+    sudo useradd -r -g workbench workbench
+fi
+
 sudo -E chown workbench:workbench /mnt/milvus
 sudo -E chown workbench:workbench /data
 
