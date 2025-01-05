@@ -1,4 +1,3 @@
-# python packages to install, one per line
 jupyterlab>3.0
 anyio==4.3.0
 ipywidgets==8.1.2
@@ -10,3 +9,4 @@ sentence_transformers==2.7.0
 GitPython==3.1.41
 python-dotenv==1.0.1
 text-generation==0.6.1
+grpcio==1.58.0
